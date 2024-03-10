@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background:linear-gradient(#111, #222);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #e91a1a;
+    position: absolute;
+    clip-path: circle(30% at right 60%);
+    z-index: -1;
+}
+.countainer{
+    height: 80%;
+    width: 80%;
+    background-color: #ffffff17;
+    border-radius: 15px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 13px;
+    margin: 12px;
+    flex-wrap: wrap;
+}
+#logo{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 15px;
+    letter-spacing: 4px;
+    transition-duration: .5s;
+}
+#logo:hover{
+    /* text-shadow: 3px 3px 5px rgb(236, 221, 221); */
+    letter-spacing: 10px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul li, a{
+    padding: 12px;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: azure;
+    transition-duration: .5s;
+
+}
+ul li a:hover{
+    letter-spacing: 4px;
+}
+.content{
+    width: 20%;
+    height: 30%;
+    /* background-color: #fff; */
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.text h2{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    position: absolute;
+    top:50%;
+    right:60%;
+    transition-duration: .7s;
+    width: 20%;
+    
+}
+.text h2:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    padding: 15px;
+    border:1px solid white;
+    /* word-wrap: break-word; */
+    /* height: 30%; */
+    width: 26% ;
+    letter-spacing: 6px;
+}
+.text p{
+    position: absolute;
+    top: 80%;
+    text-transform: capitalize;
+    color: rgb(22, 21, 20);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition-duration: .6s;
+}
+.text p:hover{
+    letter-spacing: 5px;
+    cursor: pointer;
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.062);
+    border:1px solid white;
+
+}
